@@ -2,6 +2,7 @@ package david.augusto.luan;
 
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.BiPredicate;
 import java.util.function.UnaryOperator;
 
 public class Calcular {
@@ -32,6 +33,12 @@ public class Calcular {
                 // depois para cada numero desse de um print
                 .forEach(numero -> valor.set(numero));
         return valor.get();
+    }
+
+    public boolean testarSeEMaior() {
+        BiPredicate<Integer, Integer> verificaSeEMaior =
+                (parametro, valorComparacao) -> parametro > valorComparacao;
+        return verificaSeEMaior.test(13, 12);
     }
 
 }

@@ -26,4 +26,10 @@ public class testCalcular {
         Calcular c = new Calcular();
         assertTrue((c.calcularComposicaoDeFuncoes() % 2 == 0) ? true : false);
     }
+
+    @Test
+    public void testVerificaSeEMaior() {
+        Calcular c = new Calcular();
+        assertTrue(c.testarSeEMaior());
+    }
 }
