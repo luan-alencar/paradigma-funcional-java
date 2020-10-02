@@ -22,11 +22,14 @@ public class Calcular {
 
     // imperativo
     public int calcularComposicaoDeFuncoes() {
-        int[] valores = {1, 2, 3, 4, 5};
+        int[] valores = {6, 2, 3, 4, 7};
         AtomicInteger valor = new AtomicInteger();
         Arrays.stream(valores)
+                // para cada numero q entrar aqui verifica se o resto da div e igual a 0
                 .filter(numero -> numero % 2 == 0)
+                // se for multiplica ele por 2
                 .map(numero -> numero * 2)
+                // depois para cada numero desse de um print
                 .forEach(numero -> valor.set(numero));
         return valor.get();
     }
