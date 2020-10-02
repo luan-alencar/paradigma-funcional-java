@@ -17,7 +17,7 @@ public class testCalcular {
     @Test
     public void testCalcularMedia() {
         Calcular e = new Calcular();
-        assertEquals(10, e.calcularValor());
+        assertEquals(10, e.calcularMedia());
     }
 
     @Test
