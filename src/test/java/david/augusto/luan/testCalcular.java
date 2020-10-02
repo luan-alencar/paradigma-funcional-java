@@ -2,8 +2,6 @@ package david.augusto.luan;
 
 import org.junit.Test;
 
-import java.util.Calendar;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -31,5 +29,12 @@ public class testCalcular {
     public void testVerificaSeEMaior() {
         Calcular c = new Calcular();
         assertTrue(c.testarSeEMaior());
+    }
+
+    @Test
+    public void testImutabilidade() {
+        Calcular c = new Calcular();
+        int valor = 10;
+        assertEquals(valor, c.imutabilidade());
     }
 }

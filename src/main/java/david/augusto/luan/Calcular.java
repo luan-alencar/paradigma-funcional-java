@@ -41,4 +41,12 @@ public class Calcular {
         return verificaSeEMaior.test(13, 12);
     }
 
+    // imutabilidade
+    public int imutabilidade() {
+        int valor = 10;
+        UnaryOperator<Integer> retornarDobro = v -> v * 2;
+        return valor;
+    }
+
+
 }
