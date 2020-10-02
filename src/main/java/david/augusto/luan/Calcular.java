@@ -31,7 +31,7 @@ public class Calcular {
                 // se for multiplica ele por 2
                 .map(numero -> numero * 2)
                 // depois para cada numero desse de um print
-                .forEach(numero -> valor.set(numero));
+                .forEach(numero -> valor.set(numero)); // manipulando e dizendo oq quer q faca
         return valor.get();
     }
 
